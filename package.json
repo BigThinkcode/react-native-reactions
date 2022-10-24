@@ -1,0 +1,33 @@
+{
+    "name": "react-native-reactions",
+    "version": "0.0.1",
+    "description": "Customizable reaction widget for react native applications",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BigThinkcode/react-native-reactions.git"
+    },
+    "peerDependencies": {
+        "react": ">=17.0.2",
+        "react-native": ">=0.66.4"
+    },
+    "homepage": "https://github.com/BigThinkcode/react-native-reactions",
+    "keywords": [
+        "react-native",
+        "reactions",
+        "react",
+        "customizable"
+    ],
+    "author": "https://github.com/pragadeeshk",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb": "^17.1.1",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.27.1"
+    }
+}
