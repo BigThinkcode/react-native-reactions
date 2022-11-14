@@ -1,15 +1,33 @@
-import React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import React, { useCallback } from "react"
+import { Pressable, StyleSheet, Text, View } from "react-native"
+import PropTypes from 'prop-types'
 
-export default Reactions = ({
+const Reactions = ({
     style,
-    reaction,
     onReact,
+    reaction,
     reactions,
 }) => {
-    return <View style={[styles.root, style]}>
+
+    const handlePressOut = useCallback(()=>{
+
+    })
+
+    const handleClick = useCallback(()=>{
+
+    })
+
+    const handleLongClick = useCallback(()=>{
+        
+    })
+
+    return <Pressable style={[styles.root, style]}
+            delayLongPress={100}
+            onPressOut={handlePressOut}
+            onPress={handleClick}
+            onLongPress={handleLongClick}>
         <Text>👍🏼</Text>
-    </View>
+    </Pressable>
 }
 
 const styles = StyleSheet.create({
@@ -21,3 +39,10 @@ const styles = StyleSheet.create({
         borderRadius: 10
     }
 })
+
+Reactions.propTypes = {
+    reactions: PropTypes.array.isRequired,
+    onReact: PropTypes.func.isRequired
+}
+
+export default Reactions
